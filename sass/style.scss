@@ -1,0 +1,77 @@
+@import "normalize.css";
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "compass/css3/border-radius";
+$grids:12;
+*,*:before,*:after{
+	@include box-sizing ('border-box');
+}
+body{
+	//background-color: $background-color-body;
+	//  @include background-grid;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0 0;
+	
+}
+
+.container{
+	@include background-grid;
+	@include grid-span(6,4);
+	//margin:0 auto;
+	//width:50%;	
+}
+
+input{
+	@include grid-span(10,2);
+	//display: block;
+	clear:left;
+	font-size: 20px;
+	padding: 10px;
+
+	@include border-radius(5px, 5px);
+}
+
+#autocomplete-container{
+
+	@include grid-span(10,2);
+	
+	clear: left;
+	
+	z-index: 999;
+	border: 1px solid black;
+
+}
+ul{
+	cursor: pointer;
+	padding:0px;
+	margin:0px;
+	list-style: none;
+	display: block;
+	.autocomplete-list{
+		padding:10px 5px 10px 5px;
+	}
+}
+.highlight{
+	background-color:#EBEBEB;
+}
+
+#result{
+	@include grid-span(10,2);
+	min-height: 50px;
+	
+}
+
+.autocomplete-selectedList{
+	@include border-radius(5px, 5px);
+	border: 1px solid black;
+	.autocomplete-selItem{
+		display: inline-block;
+	}
+	.autocomplete-selSpan{
+		display: inline-block;
+
+	}
+}

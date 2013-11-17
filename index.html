@@ -1,0 +1,92 @@
+<!doctype html>	
+<!--[if lt IE 7 ]> <html class="no-js ie6 ie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>	   <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js no-ie" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon-72x72.png" sizes="72x72" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon-114x114.png" sizes="114x114" />
+	<link href="stylesheets/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+</head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+<body>
+	<div class="container">
+
+
+
+	<div id="result"></div>	
+	<input type="text" placeholder="state or union territory " id="plugin" autocomplete="off">
+	<div id="autocomplete-container">
+	<ul class="autocomplete"></ul>
+	</div>
+	</div>
+	
+	
+	
+</body>
+
+</html>
+<script src="javascript/auto-complete.js">
+	
+
+</script>
+<script>
+
+	var list = [{"key":"Jammu & Kashmir", "value":"Jammu & Kashmir"},
+				{"key":"Jharkhand", "value":"Jharkhand"},
+				{"key":"Delhi", "value":"delhi"},
+				{"key":"Karnataka", "value":"karnataka"},
+				
+				{"key":"Andaman & Nicobar Island","value":"Andaman & Nicobar Island"},
+				{"key":"Andhra Pradesh","value":"Andhra Pradesh"},
+				{"key":"Arunachal Pradesh","value":"Arunachal Pradesh"},
+				{"key":"Assam","value":"Assam"},
+				{"key":"Bihar","value":"Bihar"},
+				{"key":"Chandigarh","value":"Chandigarh"},
+				{"key":"Chhattisgarh","value":"Chhattisgarh"},
+				{"key":"Dadra & Nagar Haveli","value":"Dadra & Nagar Haveli"},
+				{"key":"Daman & Diu","value":"Daman & Diu"},
+				{"key":"Goa","value":"Goa"},
+				{"key":"Gujrat","value":"Gujrat"},
+				{"key":"Haryana","value":"Haryana"},
+				{"key":"Himachal Pradesh","value":"Himachal Pradesh"},
+				{"key":"Kerala","value":"Kerala"},
+				{"key":"Lakshadweep","value":"Lakshadweep"},
+				{"key":"Madhya Pradesh","value":"Madhya Pradesh"},
+				{"key":"Maharashtra","value":"Maharashtra"},
+				{"key":"Manipur","value":"Manipur"},
+				{"key":"Meghalya","value":"Meghalya"},
+				{"key":"Mizoram","value":"Mizoram"},
+				{"key":"Nagaland","value":"Nagaland"},
+				{"key":"Odisha","value":"Odisha"},
+				{"key":"Puducherry","value":"Puducherry"},
+				{"key":"Punjab","value":"Punjab"},
+				{"key":"Rajasthan","value":"Rajasthan"},
+				{"key":"Sikkim","value":"Sikkim"},
+				{"key":"Tamil Nadu","value":"Tamil Nadu"},
+				{"key":"Tripura","value":"Tamil Nadu"},
+				{"key":"Uttar Pradesh","value":"Uttar Pradesh"},
+				{"key":"Uttrakhand","value":"Uttrakhand"},
+				{"key":"West Bengal","value":"West Bengal"}];
+
+	
+	var o = new Items(list);
+	var v = new AutoCompleteView({collection:o});
+
+</script>
